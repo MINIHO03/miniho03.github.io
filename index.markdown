@@ -1,4 +1,4 @@
-# Fast Fourier Transform 알고리즘
+# Fast Fourier Transform 알고리즘 
 
 202201626 이효민
 
@@ -8,9 +8,13 @@
 
 #### DFT(Discrete Fourier Transform)
 주파수×시간 축 데이터를 1:1로 변환하는 것
+---
+- 복소수 에 대한 DFT()
+-  ( j = 0, 1, ..., N-1 )
+- 라고 정의하면,
+- 
 
 #### 시간복잡도
-
 - DFT ->  O(n^2)
 - FFT ->  O(nlogn)
 
@@ -27,6 +31,6 @@
 ### Cooley – Tukey 알고리즘
 ---
 - 1965년 J. W. Cooley와 J. W. Tuckey가 발표한 가장 일반적으로 사용되는 FFT 알고리즘
-- 보통 크기 N을 재귀적으로 2등분하여 길이가 2인 신호가 얻어질 때까지 분할 정복 알고리즘(Divide and conquer algorithm)을 적용하기 때문에 N = 2n인 경우에 많이 적용.
-- 대용량의 자료 처리가 빠르게 가능하게 함.
-- DFT를 작은 크기로 나누어서 다시 적용하기 때문에 다른 FFT 알고리즘의 기반이 됨.
+- 보통 크기 N을 재귀적으로 2등분하여 길이가 2인 신호가 얻어질 때까지 분할 정복 알고리즘(Divide and conquer algorithm)을 적용하기 때문에 N = 2n인 경우에 많이 적용
+- 대용량의 자료 처리가 빠르게 가능하게 함
+- DFT를 작은 크기로 나누어서 다시 적용하기 때문에 다른 FFT 알고리즘의 기반이 됨
