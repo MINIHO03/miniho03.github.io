@@ -8,7 +8,7 @@
 
 ### FFT 알고리즘 종류
 ---
-- **Cooley – Tukey** 알고리즘
+- **Cooley – Tukey 알고리즘**
 - Radix-2 FFT 알고리즘
 - Radix-4 FFT 알고리즘
 - 혼합 Radix FFT 알고리즘
