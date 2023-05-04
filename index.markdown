@@ -6,10 +6,13 @@
 ---
 이산 푸리에 변환(Discrete Fourier Transform, DFT)과 그 역변환을 빠르게 수행해주는 알고리즘
 
+#### DFT(Discrete Fourier Transform)
+주파수×시간 축 데이터를 1:1로 변환하는 것
+
 #### 시간복잡도
 
-DFT ->  O(n^2)
-FFT ->  O(nlogn)
+- DFT ->  O(n^2)
+- FFT ->  O(nlogn)
 
 #### 활용
 
@@ -24,4 +27,6 @@ FFT ->  O(nlogn)
 
 ### Cooley – Tukey 알고리즘
 ---
-1965년 J. W. Cooley와 J. W. Tuckey가 발표한 가장 일반적으로 사용되는 FFT 알고리즘이다.
+- 1965년 J. W. Cooley와 J. W. Tuckey가 발표한 가장 일반적으로 사용되는 FFT 알고리즘
+- 대용량의 자료 처리가 빠르게 가능하게 함.
+- DFT를 작은 크기로 나누어서 다시 적용하기 때문에 다른 FFT 알고리즘의 기반이 됨.
